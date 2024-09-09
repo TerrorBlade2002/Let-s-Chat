@@ -1,0 +1,7 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  /*This ensures that the padding and borders are included in the height and width of each element*/
+}
+
+/*  *{ } -> means universal usage of whatever is written in {} throughout your application */

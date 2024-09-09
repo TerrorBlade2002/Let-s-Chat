@@ -1,0 +1,104 @@
+/* This will store all removed/redacted codes (js, css, html) whatever, till now in chronological timeline */
+
+/* 1. LeftSidebar.jsx -> <div> class "friends" (<p> and all) included within an Array */
+
+/* 2. Chatbox.jsx -> For CSS props of img sending, copy "s-msg" class and replace <p> with <img> */
+
+/* 3. ProfileUpdate.jsx -> name and id props removed from <textarea> tag */ 
+
+/* 4. Login.jsx -> Originally, required=no in 'I agree..' checkbox, but I've added required=yes now. */
+
+/* 5. console.log(user); -> removed from if(user) in App.jsx */
+
+/* 6. console.log(userSnap) replace by console.log(userData) in try{} in AppContext.jsx */
+
+/* 7. console.log(userData) replaced with setUserData(userData) in ApContext.jsx */
+
+/* 8. Entire code (except imports) moved inside a const upload (file) =>{} in upload.js */
+
+/* 9. Original storageRef() storage folder 'images/rivers.jpg' replaced with 'images/${Date.now() + file.name}' in upload.js */
+
+/* 10. console.log('File available at', downloadURL); replaced with resolve(downloadURL) */
+
+/* 11. entire code (after const UploadTask, except export) moved within return new Promise = {} */
+
+/* 12. <img className='profile-pic' src={image ? URL.createObjectURL(image): assets.lets_chat_logo} width="300" height="150" alt="" /> replaced with  <img className='profile-pic' src={image ? URL.createObjectURL(image) : prevImage ? prevImage : assets.lets_chat_logo} width="300" height="150" alt="" /> in ProfileUpdate.jsx*/
+
+/* 13. In <text onChange=...> replace (e.target.bio) with (e.target.value) else error (if u want to change bio!) in ProfileUpdate.jsx */
+
+/* 14. bio: "Hey there, I'm currently online!" replaced with bio:bio||"Hey there,..." so that bio doesn't get undefined! in firebase.js */
+
+/* 15. chatData[] changed to chatsData[] in firebase.js */
+
+/* 16. In <text onChange=...> use a ternary name="" ? setBio("Hey there,...) : setBio(e.target.value) */
+
+/* 17. console.log(res.data()) removed from AppContext.jsx (after chatItems) */
+
+/* 18. if(!querySnap.empty) replaced with if(!querySnap.empty && querySnap.docs[0].data().id != userData.id) in LeftSidebar.jsx */
+
+/* 19. console.log(querySnap.docs[0].data()) removed from inside if(!querySnap.empty ...) in LeftSidebar.jsx */
+
+/* 20. Move everything like query, userRef and shit inside if(input) in LeftSidebar.jsx */
+
+/* 21. Move Array(12)... in the else condition of a ternary operator in LeftSidebar.jsx */
+
+/* 22. setUser(querySnap.docs[0].data()) moved under a condition if(!userExist) in LeftSidebar.jsx */
+
+/* 23. Array(12).fill("") replaced by chatData in LeftSidebar.jsx */
+
+/* 24. In <img>, src="assets.logo" replaced by src = {item.userData.avatar} in LeftSidebar.jsx */
+
+/* 25. In <p>, "Richard Sanford" replaced by {item.userData.name} in LeftSidebar.jsx */
+
+/* 26. In <span>, "Hello, how..." replaced by {item.lastMessage} in LeftSidebar.jsx */
+
+/* 27. <div "chat-container"></div> placed inside : of ternary in Chat.jsx */
+
+/* 28. console.log(item) removed from setChat in LeftSidebar.jsx */
+
+/* 29. color: #adadad; removed from .chat-welcome{} in Chatbox.css */
+
+/* 30. src={assets.profile_img} replaced by src={chatUser.userData.avatar} in Chatbox.jsx */
+
+/* 31. Richard Sanford in <p></p> replaced by {chatUser.userData.name} */
+
+/* 32. console.log(res.data().messages.reverse()) removed from useEffect() in ChatBox.jsx */
+
+/* 33. <div "s-msg"> till <p>2:30pm</p> copied under {messages.map(()=>()} in ChatBox.jsx */
+
+/* 34. Removed the dummy msgs section (<div "s-msg"> till <p "msg"> and all) in ChatBox.jsx */
+
+/* 35. <div "s-msg"> removed with <div {some condition check ? "s-msg" : "r-msg"}> in ChatBox.jsx */
+
+/* 36. Dummy text Lorem ipsum is placeholder text... in <p> replaced by {msg.text} in ChatBox.jsx */
+
+/* 37. In <img>, src={assets.logo} replaced by src={ternary ? : } in ChatBox.jsx */
+
+/* 38. Timestamp (2:30 pm) removed in ChatBox.jsx */
+
+/* 39. <p className="msg">{msg.text}</p> is now removed to : part of ternary in Chatbox.jsx */
+
+/* 40. <div "friends"> replaced by <div {ternary check ? :> in LeftSidebar.jsx */
+
+/* 41. setMessagesId() till chatsData:userChats... moved inside try catch{} in LeftSidebar.jsx */
+
+/* 42. All <div "rs"> till <button Logout> moved inside ? of ternary in RightSidebar.jsx */
+
+/* 43. <img> src="assets.profile_img" under <div "rs-profile"> changed to src={chatUser.userData.avatar} in RightSidebar.jsx */
+
+/* 44. Same for <h3> and <p> tags, replaced with {chatUser.userData.name} and {chatUser.userData.bio} respectively in RightSidebar.jsx */
+
+/* 45. console.log(tempVar) removed from useEffect() in RightSidebar.jsx */
+
+/* 46. <img className='dot' src={assets.green_dot} alt="" /> moved inside ? of ternary in <p></p> under <div 'chat-user'> in Chatbox.jsx */
+
+/* 47. */
+
+/**/
+
+/**/
+
+/**/
+
+
+

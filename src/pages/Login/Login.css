@@ -1,0 +1,90 @@
+.login{
+
+    min-height: 100vh;  /* vh -> viewport height : fraction of browser window height. 100vh means 100% of total */
+    background: url(/background.png) no-repeat; /* no-repeat -> so that bg img is not repeated horizontally vertically to fill entire space*/
+    background-size: cover;  /* cover-> to cover entire container element with bg*/
+    display: flex;  /* flex-> flexbox mode in css for responsive layouts*/
+    align-items: center;   
+    justify-content: space-evenly;  /* justify-content used for flex items distribution. space-evenly speaks for itself*/
+
+}
+
+.login .logo{
+
+    width: max(30vw, 200px);  /* vw = viewport width : fraction of total width*/
+}
+
+.login-form{
+
+    background: white;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+
+}
+
+.login-form h2{
+
+    font-weight: 500;  /* This is for the Sign Up text */
+}
+
+.form-input{  /* For the input fields */
+
+    padding: 8px 10px;
+    border: 1px solid #c9c9c9;
+    border-radius: 4px;
+    outline-color: #077EFF;
+    
+}
+
+.login-form button{  /* This is for the Sign Up button */
+
+    padding: 10px;
+    background-color: #077EFF;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-term{   /* This is for the "I agree.." text and checkbox */
+
+    display: flex;
+    gap: 5px;
+    font-size: 12px;
+    color: #808080;
+
+}
+
+.login-forgot{  /* For the forgot password */
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.login-toggle{ /* For the "Already have an acc" text*/
+
+    font-size: 13px;
+    color: #5c5c5c;
+
+}
+
+.login-toggle span{ /* For the Click Here clickable thingy */
+
+    font-weight: 500;
+    color: #077EFF;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {   
+    .login{
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+}
