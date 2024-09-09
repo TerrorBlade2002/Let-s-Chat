@@ -2,7 +2,7 @@
 
 A simple, dynamic, responsive chat application born out of Firebase, Vite and React integrations.
 
-<hr></hr>
+<h2> Important Files </h2>
 
 
 
