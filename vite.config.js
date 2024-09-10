@@ -5,8 +5,8 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-    server: {
-      host: true,  // Set to true to allow access from your phone
-      port: 5173,  // Ensure it's the correct port
-    }
+  base: './', // This ensures relative paths work properly in production
+  build: {
+    outDir: 'dist' // This is where Vite will output the build files
+  }
 })
